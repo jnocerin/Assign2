@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FE595 SCREEN SCRAPER ASSIGNMENT</title>
+</head>
+<body>
+{% from requests import get %}
+{% resp=get("http://www.theyfightcrime.org") %}
+{% from pprint import pprint %}
+<H2> Scraped HTML </H2>
+{{ resp }}
+</body>
+</html>
